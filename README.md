@@ -5,11 +5,11 @@ and parsing it and automatically generating docs in sphinx.
 
 ### Requirements
 
-SPHINX
+* SPHINX
 pip install sphinx
-SPHINX RTD THEME:
+* SPHINX RTD THEME:
 pip install sphinx-rtd-theme
-RECOMMONMARK ( for md support )
+* RECOMMONMARK ( for md support )
 pip install --upgrade recommonmark
 
 ```
