@@ -5,5 +5,5 @@ and parsing it and automatically generating docs in sphinx.
 
 ```
 npm i
-sudo node index.js
+node index.js
 ```
