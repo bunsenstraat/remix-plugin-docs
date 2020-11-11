@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Engine vscode &mdash; plugindocs  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Engine Web" href="../web/README.html" />
+    <link rel="prev" title="engine-theia" href="../theia/README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> plugindocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/README.html">plugin-api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/content-import.html">Content Import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/editor.html">Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/file-system.html">File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/network.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/solidity.html">Solidity Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/udapp.html">Udapp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/unit-testing.html">Content Import</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ENGINE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../core/README.html">Engine Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/api/engine.html">Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/api/manager.html">Plugin Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/connector/client-connector.html">Develop &amp; Publish a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/connector/client-connector.html#use-a-client-connector">Use a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/connector/plugin-connector.html">Develop &amp; Publish a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/connector/plugin-connector.html#use-a-plugin-connector">Use a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/connector/readme.html">Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/tutorial/1-getting-started.html">Create the Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/tutorial/2-plugin-communication.html">Plugins Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/tutorial/2-plugin-communication.html#full-example">Full Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/tutorial/3-hosted-plugin.html">Hosted Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/tutorial/4-external-plugins.html">External Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/doc/tutorial/5-plugin-service.html">Plugin Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../node/README.html">engine-node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theia/README.html">engine-theia</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Engine vscode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-in-plugins">Build-in plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#webview">webview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#options">Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#terminal">terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#window">Window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-manager">File Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme">Theme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../web/README.html">Engine Web</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PLUGIN</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/child-process/README.html">plugin-child-process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/core/README.html">Plugin Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/core/doc/api/readme.html">Client API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/iframe/README.html">Plugin frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/theia/README.html">plugin-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/vscode/README.html">Plugin vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/webview/README.html">Plugin Webview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/webworker/README.html">Plugin Webworker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/ws/README.html">Plugin ws</a></li>
+</ul>
+<p class="caption"><span class="caption-text">UTILS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../utils/README.html">plugin-utils</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">plugindocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Engine vscode</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/packages/engine/vscode/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="engine-vscode">
+<h1>Engine vscode<a class="headerlink" href="#engine-vscode" title="Permalink to this headline">¶</a></h1>
+<p>The <strong>vscode engine</strong> provides a list of connectors &amp; plugins for a <strong>plugin engine</strong> that is built inside vscode.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="nd">@remixproject</span><span class="o">/</span><span class="n">engine</span><span class="o">-</span><span class="n">vscode</span>
+</pre></div>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>You can use the remixproject engine to create a plugin system on top of a vscode extension.
+For that you need to create an engine and start registering your plugins.</p>
+<blockquote>
+<div>checkout <a class="reference internal" href="../core/README.html"><span class="doc">&#64;remixproject/engine documentation</span></a> for more details.</div></blockquote>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span><span class="p">,</span> <span class="nx">Manager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">async</span> <span class="kd">function</span> <span class="nx">activate</span><span class="p">(</span><span class="nx">context</span>: <span class="kt">ExtensionContext</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Manager</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="build-in-plugins">
+<h2>Build-in plugins<a class="headerlink" href="#build-in-plugins" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">&#64;remixproject/engine-vscode</span></code> comes with build-in plugins for <code class="docutils literal notranslate"><span class="pre">vscode</span></code>.</p>
+<div class="section" id="webview">
+<h3>webview<a class="headerlink" href="#webview" title="Permalink to this headline">¶</a></h3>
+<p>The webview plugin opens a webview in the workspace and connects to it.
+The plugin must use <a class="reference internal" href="../../plugin/webview/README.html"><span class="doc">&#64;remixproject/plugin-webview</span></a> to be able to establish connection.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">WebviewPlugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine-vscode&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span><span class="p">,</span> <span class="nx">Manager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">async</span> <span class="kd">function</span> <span class="nx">activate</span><span class="p">(</span><span class="nx">context</span>: <span class="kt">ExtensionContext</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Manager</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">webview</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WebviewPlugin</span><span class="p">({</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;webview-plugin&#39;</span><span class="p">,</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://my-plugin-path.com&#39;</span><span class="p">,</span>
+    <span class="nx">methods</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;getData&#39;</span><span class="p">]</span>
+  <span class="p">},</span> <span class="p">{</span> <span class="nx">context</span> <span class="p">})</span> <span class="c1">// We need to pass the context as scond parameter</span>
+  <span class="nx">engine</span><span class="p">.</span><span class="nx">register</span><span class="p">([</span><span class="nx">manager</span><span class="p">,</span> <span class="nx">webview</span><span class="p">]);</span>
+  <span class="c1">// This will create the webview and inject the code inside</span>
+  <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">activatePlugin</span><span class="p">(</span><span class="s1">&#39;webview-plugin&#39;</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;webview-plugin&#39;</span><span class="p">,</span> <span class="s1">&#39;getData&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The url can be :</p>
+<ul class="simple">
+<li>remote</li>
+<li>absolute</li>
+<li>relative to the <strong>extension file</strong> (option.relativeTo === ‘extension’)</li>
+<li>relative to the <strong>open workspace</strong> (option.relativeTo === ‘workspace’)</li>
+</ul>
+<blockquote>
+<div>The url can also be local. In this case you must provide an <strong>absolute path</strong>.</div></blockquote>
+<div class="section" id="options">
+<h4>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">context</span></code>: The context of the vscode extension.</li>
+<li><code class="docutils literal notranslate"><span class="pre">column</span></code>: The <code class="docutils literal notranslate"><span class="pre">ViewColumn</span></code> in which run the webview.</li>
+<li><code class="docutils literal notranslate"><span class="pre">relativeTo</span></code>: If url is relative, is it relative to ‘workspace’ or ‘extension’ (default to ‘extension’)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="terminal">
+<h3>terminal<a class="headerlink" href="#terminal" title="Permalink to this headline">¶</a></h3>
+<p>The terminal plugin gives access to the current terminal in vscode.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">TerminalPlugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine-vscode&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span><span class="p">,</span> <span class="nx">Manager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">async</span> <span class="kd">function</span> <span class="nx">activate</span><span class="p">(</span><span class="nx">context</span>: <span class="kt">ExtensionContext</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Manager</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">terminal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TerminalPlugin</span><span class="p">()</span>
+
+  <span class="nx">engine</span><span class="p">.</span><span class="nx">register</span><span class="p">([</span><span class="nx">manager</span><span class="p">,</span> <span class="nx">terminal</span><span class="p">]);</span>
+  <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">activatePlugin</span><span class="p">(</span><span class="s1">&#39;terminal&#39;</span><span class="p">);</span>
+  <span class="c1">// Execute &quot;npm run build&quot; in the terminal</span>
+  <span class="nx">manager</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;terminal&#39;</span><span class="p">,</span> <span class="s1">&#39;exec&#39;</span><span class="p">,</span> <span class="s1">&#39;npm run build&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="window">
+<h3>Window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h3>
+<p>Provides access to the native window of vscode.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">WindowPlugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine-vscode&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span><span class="p">,</span> <span class="nx">Manager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">async</span> <span class="kd">function</span> <span class="nx">activate</span><span class="p">(</span><span class="nx">context</span>: <span class="kt">ExtensionContext</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Manager</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nb">window</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WindowPlugin</span><span class="p">()</span>
+
+  <span class="nx">engine</span><span class="p">.</span><span class="nx">register</span><span class="p">([</span><span class="nx">manager</span><span class="p">,</span> <span class="nb">window</span><span class="p">]);</span>
+  <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">activatePlugin</span><span class="p">(</span><span class="s1">&#39;window&#39;</span><span class="p">);</span>
+  <span class="c1">// Open a prompt to the user</span>
+  <span class="kr">const</span> <span class="nx">fortyTwo</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;window&#39;</span><span class="p">,</span> <span class="s1">&#39;prompt&#39;</span><span class="p">,</span> <span class="s1">&#39;What is The Answer to the Ultimate Question of Life, the Universe, and Everything&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="file-manager">
+<h3>File Manager<a class="headerlink" href="#file-manager" title="Permalink to this headline">¶</a></h3>
+<p>Provides access to the file system through vscode api.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">FileManagerPlugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine-vscode&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span><span class="p">,</span> <span class="nx">Manager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">async</span> <span class="kd">function</span> <span class="nx">activate</span><span class="p">(</span><span class="nx">context</span>: <span class="kt">ExtensionContext</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Manager</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FileManagerPlugin</span><span class="p">()</span>
+
+  <span class="nx">engine</span><span class="p">.</span><span class="nx">register</span><span class="p">([</span><span class="nx">manager</span><span class="p">,</span> <span class="nx">fs</span><span class="p">]);</span>
+  <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">activatePlugin</span><span class="p">(</span><span class="s1">&#39;filemanager&#39;</span><span class="p">);</span>
+  <span class="c1">// Open a file into vscode</span>
+  <span class="c1">// If path is relative it will look at the root of the open folder in vscode</span>
+  <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;filemanager&#39;</span><span class="p">,</span> <span class="s1">&#39;open&#39;</span><span class="p">,</span> <span class="s1">&#39;package.json&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="theme">
+<h3>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h3>
+<p>Remix’s standard theme wrapper for vscode.
+Use this plugin to take advantage of the Remix’s standard themes for your plugins.
+Otherwise, consider using <a class="reference external" href="https://code.visualstudio.com/api/references/theme-color">vscode’s color api</a> directly in your webview.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">ThemePlugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine-vscode&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span><span class="p">,</span> <span class="nx">Manager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/engine&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">async</span> <span class="kd">function</span> <span class="nx">activate</span><span class="p">(</span><span class="nx">context</span>: <span class="kt">ExtensionContext</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Manager</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">();</span>
+  <span class="kr">const</span> <span class="nx">theme</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ThemePlugin</span><span class="p">();</span>
+
+  <span class="nx">engine</span><span class="p">.</span><span class="nx">register</span><span class="p">([</span><span class="nx">manager</span><span class="p">,</span> <span class="nx">fs</span><span class="p">]);</span>
+  <span class="nx">await</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">activatePlugin</span><span class="p">(</span><span class="s1">&#39;theme&#39;</span><span class="p">);</span>
+  <span class="c1">// Now your webview can listen on themeChanged event from the theme plugin</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../web/README.html" class="btn btn-neutral float-right" title="Engine Web" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../theia/README.html" class="btn btn-neutral float-left" title="engine-theia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Ethereum
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

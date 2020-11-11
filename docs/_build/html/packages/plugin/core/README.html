@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Plugin Core &mdash; plugindocs  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Client API" href="doc/api/readme.html" />
+    <link rel="prev" title="plugin-child-process" href="../child-process/README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> plugindocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/README.html">plugin-api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/content-import.html">Content Import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/editor.html">Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/file-system.html">File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/network.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/solidity.html">Solidity Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/udapp.html">Udapp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/doc/unit-testing.html">Content Import</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ENGINE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/README.html">Engine Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/api/engine.html">Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/api/manager.html">Plugin Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/client-connector.html">Develop &amp; Publish a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/client-connector.html#use-a-client-connector">Use a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/plugin-connector.html">Develop &amp; Publish a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/plugin-connector.html#use-a-plugin-connector">Use a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/readme.html">Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/1-getting-started.html">Create the Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/2-plugin-communication.html">Plugins Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/2-plugin-communication.html#full-example">Full Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/3-hosted-plugin.html">Hosted Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/4-external-plugins.html">External Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/5-plugin-service.html">Plugin Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/node/README.html">engine-node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/theia/README.html">engine-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/vscode/README.html">Engine vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/web/README.html">Engine Web</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PLUGIN</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../child-process/README.html">plugin-child-process</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Plugin Core</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-client">Plugin Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#test-inside-remix-ide">Test inside Remix IDE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#testing-your-plugin">Testing your plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#status">Status</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#client-options">Client Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#css-theme">CSS Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-api">Custom Api</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#devmode">DevMode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doc/api/readme.html">Client API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iframe/README.html">Plugin frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theia/README.html">plugin-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/README.html">Plugin vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../webview/README.html">Plugin Webview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../webworker/README.html">Plugin Webworker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ws/README.html">Plugin ws</a></li>
+</ul>
+<p class="caption"><span class="caption-text">UTILS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../utils/README.html">plugin-utils</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">plugindocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Plugin Core</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/packages/plugin/core/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="plugin-core">
+<h1>Plugin Core<a class="headerlink" href="#plugin-core" title="Permalink to this headline">¶</a></h1>
+<p>This is the core library used to create a new external plugin.</p>
+<p>| Name                       | Latest Version       |
+| —————————| :——————: |
+| <a class="reference external" href=".">&#64;remixproject/plugin</a>  | <a class="reference external" href="https://www.npmjs.com/package/&#64;remixproject/plugin"><img alt="badge" src="https://img.shields.io/npm/v/&#64;remixproject/plugin.svg?style=flat-square" /></a> |</p>
+<p>Use this library if you want to create a plugin <strong>for a new environment</strong>.</p>
+<p>If you want to create a plugin in an existing envrionment, use the specific library. For example :</p>
+<ul class="simple">
+<li>Plugin on an iframe: <a class="reference external" href="../iframe">&#64;remixproject/plugin-iframe</a></li>
+<li>Plugin on a node child-process: <a class="reference external" href="../child-process">&#64;remixproject/plugin-child-process</a></li>
+<li>Plugin on an vscode extension or webview : <a class="reference external" href="../vscode">&#64;remixproject/plugin-vscode</a></li>
+</ul>
+<div class="section" id="api">
+<h2>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<p>| API                     | Description                                   |
+| ————————| :——————————————-: |
+| <a class="reference external" href="./api">PluginClient</a>   | Entry point to communicate with other plugins |</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>This getting started is for building <strong>iframe based plugin</strong> (only supported by remix-ide for now).</div></blockquote>
+<p>Installation :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm install @remixproject/plugin-iframe
+</pre></div>
+</div>
+<p>or with a unpkg :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/@remixproject/plugin&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="plugin-client">
+<h3>Plugin Client<a class="headerlink" href="#plugin-client" title="Permalink to this headline">¶</a></h3>
+<p>The plugin client is how you connect your plugin to remix.</p>
+<p>To import ( the ES6 way) with NPM use:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">createClient</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/plugin&#39;</span>
+<span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createClient</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Or if you are using unpkg use:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="p">{</span> <span class="nx">createClient</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">remixPlugin</span>
+<span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createClient</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-inside-remix-ide">
+<h2>Test inside Remix IDE<a class="headerlink" href="#test-inside-remix-ide" title="Permalink to this headline">¶</a></h2>
+<p>To test your plugin with remix:</p>
+<ol class="simple">
+<li>Go to http://remix-alpha.ethereum.org. (if your localhost is over HTTP, you need to use http for Remix IDE).</li>
+<li>Click on the plugin manager (Plug icon on the left).</li>
+<li>Click on “Connect to a Local Plugin”.</li>
+<li>Fill the profile info of you plugin ().</li>
+<li>Click on “ok”.</li>
+<li>A new icon should appear on the left, this is where you can find you plugin.</li>
+</ol>
+<div align="center">
+  <img src="./doc/videos/remix_local_plugin.gif" width="600">
+</div><div class="section" id="testing-your-plugin">
+<h3>Testing your plugin<a class="headerlink" href="#testing-your-plugin" title="Permalink to this headline">¶</a></h3>
+<p>You can test your plugin direcly on the <a class="reference external" href="https://remix-alpha.ethereum.org">alpha version of Remix-IDE</a>. Go to the <code class="docutils literal notranslate"><span class="pre">pluginManager</span></code> (plug icon in the sidebar), and click “Connect to a Local Plugin”.</p>
+<p>Here you can add :</p>
+<ul class="simple">
+<li>A name : this is the name used by other plugin to listen to your events.</li>
+<li>A displayName : Used by the IDE.</li>
+<li>The url : May be a localhost for testing.</li>
+</ul>
+<blockquote>
+<div>Note: No need to do anything if you localhost auto-reload, a new <code class="docutils literal notranslate"><span class="pre">handshake</span></code> will be send by the IDE.</div></blockquote>
+</div>
+</div>
+<div class="section" id="status">
+<h2>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p>Every plugin has a status object that can display notifications on the IDE. You can listen on a change of status from any plugin using <code class="docutils literal notranslate"><span class="pre">statusChanged</span></code> event :</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;fileManager&#39;</span><span class="p">,</span> <span class="s1">&#39;statusChanged&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">status</span>: <span class="kt">Status</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// Do Something </span>
+<span class="p">})</span>
+</pre></div>
+</div>
+<p>The status object is used for displaying a notification. It looks like that :</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">interface</span> <span class="nx">Status</span> <span class="p">{</span>
+  <span class="nx">key</span>: <span class="kt">number</span> <span class="o">|</span> <span class="s1">&#39;edited&#39;</span> <span class="o">|</span> <span class="s1">&#39;succeed&#39;</span> <span class="o">|</span> <span class="s1">&#39;loading&#39;</span> <span class="o">|</span> <span class="s1">&#39;failed&#39;</span> <span class="o">|</span> <span class="s1">&#39;none&#39;</span>  <span class="c1">// Display an icon or number</span>
+  <span class="nx">type</span><span class="o">?:</span> <span class="s1">&#39;success&#39;</span> <span class="o">|</span> <span class="s1">&#39;info&#39;</span> <span class="o">|</span> <span class="s1">&#39;warning&#39;</span> <span class="o">|</span> <span class="s1">&#39;error&#39;</span>  <span class="c1">// Bootstrap css color</span>
+  <span class="nx">title?</span>: <span class="kt">string</span>  <span class="c1">// Describe the status on mouseover</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>If you want to remove a status use the <code class="docutils literal notranslate"><span class="pre">'none'</span></code> value for <code class="docutils literal notranslate"><span class="pre">key</span></code>.</li>
+<li>If you don’t define type, it would be the default value (‘info’ for Remix IDE).</li>
+</ul>
+<p>You can also change the status of your own plugin by emitting the same event :</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;statusChanged&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;succeed&#39;</span><span class="p">,</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;success&#39;</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Documentation ready !&#39;</span> <span class="p">})</span>
+</pre></div>
+</div>
+<blockquote>
+<div>The IDE can use this status to display a notification to the user.</div></blockquote>
+<div class="section" id="client-options">
+<h3>Client Options<a class="headerlink" href="#client-options" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="css-theme">
+<h4>CSS Theme<a class="headerlink" href="#css-theme" title="Permalink to this headline">¶</a></h4>
+<p>Remix is using <a class="reference external" href="https://getbootstrap.com/">Bootstrap</a>. For better User Experience it’s <strong>highly recommanded</strong> to use the same theme as Remix in your plugin. For that you <em>just</em> have to use standard bootstrap classes.</p>
+<p>Remix will automatically create a <code class="docutils literal notranslate"><span class="pre">&lt;link/&gt;</span></code> tag in the header of your plugin with the current theme used. And it’ll update the link each time the user change the theme.</p>
+<p>If you really want to use your own theme, you can use the <code class="docutils literal notranslate"><span class="pre">customTheme</span></code> flag in the option :</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createClient</span><span class="p">({</span> <span class="nx">customTheme</span>: <span class="kt">true</span> <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-api">
+<h4>Custom Api<a class="headerlink" href="#custom-api" title="Permalink to this headline">¶</a></h4>
+<p>By default <code class="docutils literal notranslate"><span class="pre">&#64;remixproject/plugin</span></code> will use remix IDE api.
+If you want to extends the API you can specify it in the <code class="docutils literal notranslate"><span class="pre">customApi</span></code> option.</p>
+<p>A good use case is when you want to use an external plugin not maintained by Remix team (3box plugin for example):</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">remixProfiles</span><span class="p">,</span> <span class="nx">IRemixApi</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@remixproject/plugin&#39;</span>
+<span class="kr">interface</span> <span class="nx">ICustomApi</span> <span class="kr">extends</span> <span class="nx">IRemixApi</span> <span class="p">{</span>
+  <span class="nx">box</span>: <span class="kt">IBox</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="nx">type</span> <span class="nx">CustomApi</span> <span class="o">=</span> <span class="nx">Readonly</span><span class="o">&lt;</span><span class="nx">ICustomApi</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="nx">type</span> <span class="nx">RemixClient</span> <span class="o">=</span> <span class="nx">PluginClient</span><span class="o">&lt;</span><span class="nx">any</span><span class="p">,</span> <span class="nx">CustomApi</span><span class="o">&gt;</span> <span class="o">&amp;</span> <span class="nx">PluginApi</span><span class="o">&lt;</span><span class="nx">CustomApi</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">customApi</span>: <span class="kt">ProfileMap</span><span class="o">&lt;</span><span class="nx">RemixIDE</span><span class="o">&gt;</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({</span>
+  <span class="p">...</span><span class="nx">remixProfiles</span><span class="p">,</span>
+  <span class="nx">box</span>: <span class="kt">boxProfile</span>
+<span class="p">});</span>
+<span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createClient</span><span class="p">({</span> <span class="nx">customApi</span> <span class="p">})</span>
+</pre></div>
+</div>
+<blockquote>
+<div>You’ll need Typescript &gt; 3.4 to leverage the types.</div></blockquote>
+</div>
+<div class="section" id="devmode">
+<h4>DevMode<a class="headerlink" href="#devmode" title="Permalink to this headline">¶</a></h4>
+<p>Plugins communicate with the IDE through the <code class="docutils literal notranslate"><span class="pre">postMessage</span></code> API. It means that <code class="docutils literal notranslate"><span class="pre">PluginClient</span></code> needs to know the origin of your IDE.</p>
+<p>If you’re developing a plugin with your IDE running on <code class="docutils literal notranslate"><span class="pre">localhost</span></code> you’ll need to specify the port on which your IDE runs. By default the port used is <em>8080</em>. To change it you can do:</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">devMode</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">port</span>: <span class="kt">3000</span> <span class="p">}</span>
+<span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">createClient</span><span class="p">({</span> <span class="nx">devMode</span> <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="doc/api/readme.html" class="btn btn-neutral float-right" title="Client API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../child-process/README.html" class="btn btn-neutral float-left" title="plugin-child-process" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Ethereum
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

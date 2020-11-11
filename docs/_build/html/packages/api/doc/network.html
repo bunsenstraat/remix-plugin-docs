@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Network &mdash; plugindocs  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Settings" href="settings.html" />
+    <link rel="prev" title="File System" href="file-system.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> plugindocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">plugin-api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content-import.html">Content Import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file-system.html">File System</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Network</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#events">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#types">Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solidity.html">Solidity Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="udapp.html">Udapp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit-testing.html">Content Import</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ENGINE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/README.html">Engine Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/api/engine.html">Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/api/manager.html">Plugin Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/client-connector.html">Develop &amp; Publish a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/client-connector.html#use-a-client-connector">Use a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/plugin-connector.html">Develop &amp; Publish a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/plugin-connector.html#use-a-plugin-connector">Use a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/connector/readme.html">Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/1-getting-started.html">Create the Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/2-plugin-communication.html">Plugins Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/2-plugin-communication.html#full-example">Full Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/3-hosted-plugin.html">Hosted Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/4-external-plugins.html">External Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/core/doc/tutorial/5-plugin-service.html">Plugin Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/node/README.html">engine-node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/theia/README.html">engine-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/vscode/README.html">Engine vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine/web/README.html">Engine Web</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PLUGIN</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/child-process/README.html">plugin-child-process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/core/README.html">Plugin Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/core/doc/api/readme.html">Client API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/iframe/README.html">Plugin frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/theia/README.html">plugin-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/vscode/README.html">Plugin vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/webview/README.html">Plugin Webview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/webworker/README.html">Plugin Webworker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugin/ws/README.html">Plugin ws</a></li>
+</ul>
+<p class="caption"><span class="caption-text">UTILS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../utils/README.html">plugin-utils</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">plugindocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Network</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/packages/api/doc/network.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="network">
+<h1>Network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Name in Remix: <code class="docutils literal notranslate"><span class="pre">network</span></code></li>
+<li>kind: <code class="docutils literal notranslate"><span class="pre">network</span></code></li>
+</ul>
+<p>The network exposes methods and events about :</p>
+<ul class="simple">
+<li>The provider: <code class="docutils literal notranslate"><span class="pre">web3</span></code>, <code class="docutils literal notranslate"><span class="pre">vm</span></code>, <code class="docutils literal notranslate"><span class="pre">injected</span></code>.</li>
+<li>The Ethereum Network: <code class="docutils literal notranslate"><span class="pre">mainnet</span></code>, <code class="docutils literal notranslate"><span class="pre">ropsten</span></code>, <code class="docutils literal notranslate"><span class="pre">rinkeby</span></code>, <code class="docutils literal notranslate"><span class="pre">kovan</span></code>, <code class="docutils literal notranslate"><span class="pre">Custom</span></code></li>
+</ul>
+<p>|Type     |Name                 |Description
+|———|———————|–
+|<em>event</em>  |<code class="docutils literal notranslate"><span class="pre">providerChanged</span></code>    |Triggered when the provider changes.
+|<em>method</em> |<code class="docutils literal notranslate"><span class="pre">getNetworkProvider</span></code> |Get the current provider.
+|<em>method</em> |<code class="docutils literal notranslate"><span class="pre">getEndpoint</span></code>        |Get the URL of the provider if <code class="docutils literal notranslate"><span class="pre">web3</span></code>.
+|<em>method</em> |<code class="docutils literal notranslate"><span class="pre">detectNetwork</span></code>      |Get the current network used.
+|<em>method</em> |<code class="docutils literal notranslate"><span class="pre">addNetwork</span></code>         |Add a custom network.
+|<em>method</em> |<code class="docutils literal notranslate"><span class="pre">removeNetwork</span></code>      |Remove a custom network.</p>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="events">
+<h3>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">providerChanged</span></code>: Triggered when the provider changes.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">solidity</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;providerChanged&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">provider</span>: <span class="kt">NetworkProvider</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// Do something</span>
+<span class="p">})</span>
+<span class="c1">// OR</span>
+<span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;fileManager&#39;</span><span class="p">,</span> <span class="s1">&#39;currentFileChanged&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">provider</span>: <span class="kt">NetworkProvider</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// Do something</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="methods">
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">getNetworkProvider</span></code>: Get the current provider.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">network</span><span class="p">.</span><span class="nx">getNetworkProvider</span><span class="p">()</span>
+<span class="c1">// OR</span>
+<span class="kr">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;network&#39;</span><span class="p">,</span> <span class="s1">&#39;getNetworkProvider&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">getEndpoint</span></code>: Get the URL of the provider if <code class="docutils literal notranslate"><span class="pre">web3</span></code>.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">endpoint</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">network</span><span class="p">.</span><span class="nx">getEndpoint</span><span class="p">()</span>
+<span class="c1">// OR</span>
+<span class="kr">const</span> <span class="nx">endpoint</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;network&#39;</span><span class="p">,</span> <span class="s1">&#39;getEndpoint&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">detectNetwork</span></code>: Get the current network being used.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">network</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">network</span><span class="p">.</span><span class="nx">detectNetwork</span><span class="p">()</span>
+<span class="c1">// OR</span>
+<span class="kr">const</span> <span class="nx">network</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;network&#39;</span><span class="p">,</span> <span class="s1">&#39;detectNetwork&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">addNetwork</span></code>: Add a custom network.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">network</span><span class="p">.</span><span class="nx">addNetwork</span><span class="p">({</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://localhost:8586&#39;</span> <span class="p">})</span>
+<span class="c1">// OR</span>
+<span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;network&#39;</span><span class="p">,</span> <span class="s1">&#39;addNetwork&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://localhost:8586&#39;</span> <span class="p">})</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">removeNetwork</span></code>: Remove a custom network.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">network</span><span class="p">.</span><span class="nx">removeNetwork</span><span class="p">({</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://localhost:8586&#39;</span> <span class="p">})</span>
+<span class="c1">// OR</span>
+<span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;network&#39;</span><span class="p">,</span> <span class="s1">&#39;removeNetwork&#39;</span><span class="p">,</span> <span class="s1">&#39;local&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="types">
+<h2>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">NetworkProvider</span></code>: A string literal : <code class="docutils literal notranslate"><span class="pre">vm</span></code>, <code class="docutils literal notranslate"><span class="pre">injected</span></code> or <code class="docutils literal notranslate"><span class="pre">web3</span></code>.
+<code class="docutils literal notranslate"><span class="pre">Network</span></code>: A simple object with the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">id</span></code> of the network.
+<code class="docutils literal notranslate"><span class="pre">CustomNetwork</span></code>: A simple object with a <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
+<blockquote>
+<div>Type Definitions can be found <a class="reference external" href="../src/lib/network/type.ts">here</a></div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="settings.html" class="btn btn-neutral float-right" title="Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="file-system.html" class="btn btn-neutral float-left" title="File System" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Ethereum
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
