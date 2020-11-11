@@ -8,31 +8,38 @@ Remix Plugin documentation
 
 .. toctree::
    :maxdepth: 2
+   :caption: ABOUT
+   :glob:
+   
+   /plugin/*
+
+.. toctree::
+   :maxdepth: 2
    :caption: API
    :glob:
    
-   /packages/api/*
-   /packages/api/**/*
+   /plugin/packages/api/*
+   /plugin/packages/api/**/*
 
 .. toctree::
    :maxdepth: 2
    :caption: ENGINE
    :glob:
 
-   /packages/engine/**/*
+   /plugin/packages/engine/**/*
 
 .. toctree::
    :maxdepth: 2
    :caption: PLUGIN
    :glob:
 
-   /packages/plugin/*
-   /packages/plugin/**/*
+   /plugin/packages/plugin/*
+   /plugin/packages/plugin/**/*
 
 .. toctree::
    :maxdepth: 2
    :caption: UTILS
    :glob:
 
-   /packages/utils/*
-   /packages/utils/**/*
+   /plugin/packages/utils/*
+   /plugin/packages/utils/**/*

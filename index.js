@@ -27,7 +27,8 @@ console.log("cloning", myrepo.url);
 console.log(shell.pwd());
 const cmd = `git clone --single-branch --branch ${myrepo.branch} ${myrepo.url} ${myrepo.path}`;
 
-let docdir = `${__dirname}/docs`;
+let docdir = `${__dirname}/docs/plugin`;
+let basedocdir = `${__dirname}/docs`;
 
 console.log(docdir)
 console.log(cmd);
@@ -50,7 +51,7 @@ shell.exec(cmd, async function (code, stdout, stderr) {
                     count++;
                     if (count == files.length) {
                         console.log("done");
-                        shell.cd(docdir);
+                        shell.cd(basedocdir);
                         shell.exec(`rm -rf ${docdir}/_build`);
                         shell.exec("make html");
                     }

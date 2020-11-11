@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Client API &mdash; plugindocs  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../../" src="../../../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" />
+    <link rel="next" title="Plugin frame" href="../../../iframe/README.html" />
+    <link rel="prev" title="Plugin Core" href="../../README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../../index.html" class="icon icon-home" alt="Documentation Home"> plugindocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">ABOUT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../README.html">Remix Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../README.html#contribute">Contribute</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/README.html">plugin-api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/content-import.html">Content Import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/editor.html">Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/file-system.html">File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/network.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/solidity.html">Solidity Compiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/udapp.html">Udapp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/doc/unit-testing.html">Content Import</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ENGINE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/README.html">Engine Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/api/engine.html">Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/api/manager.html">Plugin Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/connector/client-connector.html">Develop &amp; Publish a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/connector/client-connector.html#use-a-client-connector">Use a Client Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/connector/plugin-connector.html">Develop &amp; Publish a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/connector/plugin-connector.html#use-a-plugin-connector">Use a Plugin Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/connector/readme.html">Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/tutorial/1-getting-started.html">Create the Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/tutorial/2-plugin-communication.html">Plugins Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/tutorial/2-plugin-communication.html#full-example">Full Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/tutorial/3-hosted-plugin.html">Hosted Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/tutorial/4-external-plugins.html">External Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/core/doc/tutorial/5-plugin-service.html">Plugin Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/node/README.html">engine-node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/theia/README.html">engine-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/vscode/README.html">Engine vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../engine/web/README.html">Engine Web</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PLUGIN</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../child-process/README.html">plugin-child-process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">Plugin Core</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Client API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loaded">Loaded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#call">Call</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emit">Emit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#expose-methods">Expose methods</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../iframe/README.html">Plugin frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../theia/README.html">plugin-theia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../vscode/README.html">Plugin vscode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../webview/README.html">Plugin Webview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../webworker/README.html">Plugin Webworker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ws/README.html">Plugin ws</a></li>
+</ul>
+<p class="caption"><span class="caption-text">UTILS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../utils/README.html">plugin-utils</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">plugindocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Client API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../../_sources/plugin/packages/plugin/core/doc/api/readme.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="client-api">
+<h1>Client API<a class="headerlink" href="#client-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="loaded">
+<h2>Loaded<a class="headerlink" href="#loaded" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">PluginClient</span></code> listen on a first handshake from the IDE before beeing able to communicate back. For that you need to wait for the Promise / callback <code class="docutils literal notranslate"><span class="pre">onload</span></code> to be called.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">onload</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="cm">/* Do something */</span><span class="p">)</span>
+<span class="nx">client</span><span class="p">.</span><span class="nx">onload</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">_</span> <span class="p">=&gt;</span> <span class="cm">/* Do Something now */</span><span class="p">)</span>
+<span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">onload</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<p>To listen to an event you need to provide the name of the plugin you’re listening on, and the name of the event :</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="cm">/* pluginName */</span><span class="p">,</span> <span class="cm">/* eventName */</span><span class="p">,</span> <span class="p">...</span><span class="nx">arguments</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For exemple if you want to listen to Solidity compilation :</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;solidity&#39;</span><span class="p">,</span> <span class="s1">&#39;compilationFinished&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">target</span><span class="p">,</span> <span class="nx">source</span><span class="p">,</span> <span class="nx">version</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="cm">/* Do Something on Compilation */</span>
+  <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>⚠️ Be sure that your plugin is loaded before listening on an event.</p>
+<blockquote>
+<div>See all available event <a class="reference external" href="#api">below</a>.</div></blockquote>
+</div>
+<div class="section" id="call">
+<h2>Call<a class="headerlink" href="#call" title="Permalink to this headline">¶</a></h2>
+<p>You can call some methods exposed by the IDE with with the method <code class="docutils literal notranslate"><span class="pre">call</span></code>. You need to provide the name of the plugin, the name of the method, and the arguments of the methods :</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="cm">/* pluginName */</span><span class="p">,</span> <span class="cm">/* methodName */</span><span class="p">,</span> <span class="p">...</span><span class="nx">arguments</span><span class="p">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div>Note: <code class="docutils literal notranslate"><span class="pre">call</span></code> is alway Promise</div></blockquote>
+<p>For example if you want to upsert the current file :</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">async</span> <span class="kd">function</span> <span class="nx">upsertCurrentFile</span><span class="p">(</span><span class="nx">content</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;fileManager&#39;</span><span class="p">,</span> <span class="s1">&#39;getCurrentFile&#39;</span><span class="p">)</span>
+  <span class="nx">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;fileManager&#39;</span><span class="p">,</span> <span class="s1">&#39;setFile&#39;</span><span class="p">,</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">content</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>⚠️ Be sure that your plugin is loaded before making any call.</p>
+</div>
+<div class="section" id="emit">
+<h2>Emit<a class="headerlink" href="#emit" title="Permalink to this headline">¶</a></h2>
+<p>Your plugin can emit events that other plugins can listen on.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">client</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="cm">/* eventName */</span><span class="p">,</span> <span class="p">...</span><span class="nx">arguments</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s say your plugin build deploys a Readme for your contract on IPFS :</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">async</span> <span class="kd">function</span> <span class="nx">deployReadme</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="p">[</span> <span class="nx">result</span> <span class="p">]</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">ipfs</span><span class="p">.</span><span class="nx">files</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;readmeDeployed&#39;</span><span class="p">,</span> <span class="nx">result</span><span class="p">.</span><span class="nx">hash</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>Note: Be sure that your plugin is loaded before making any call.</div></blockquote>
+</div>
+<div class="section" id="expose-methods">
+<h2>Expose methods<a class="headerlink" href="#expose-methods" title="Permalink to this headline">¶</a></h2>
+<p>Your plugin can also exposed methods to other plugins. For that you need to extends the <code class="docutils literal notranslate"><span class="pre">PluginClient</span></code> class, and override the <code class="docutils literal notranslate"><span class="pre">methods</span></code> property :</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kr">class</span> <span class="nx">MyPlugin</span> <span class="kr">extends</span> <span class="nx">PluginClient</span> <span class="p">{</span>
+  <span class="nx">methods</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;sayHello&#39;</span><span class="p">];</span>
+
+  <span class="nx">sayHello</span><span class="p">(</span><span class="nx">name</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="sb">`Hello </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> !`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">buildIframeClient</span><span class="p">(</span><span class="k">new</span> <span class="nx">MyPlugin</span><span class="p">())</span>
+</pre></div>
+</div>
+<blockquote>
+<div>When extending the <code class="docutils literal notranslate"><span class="pre">PluginClient</span></code> you need to connect your client to the iframe with <code class="docutils literal notranslate"><span class="pre">buildIframeClient</span></code>.</div></blockquote>
+<p>You can find an exemple <a class="reference external" href="https://github.com/pldespaigne/remix-3box-plugin">here</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../iframe/README.html" class="btn btn-neutral float-right" title="Plugin frame" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../README.html" class="btn btn-neutral float-left" title="Plugin Core" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Ethereum
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
